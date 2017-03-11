@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Billing and Shipping HW</title>
+	<meta charset="utf-8" />
+    <style>
+        div {
+            float: left;
+            padding: 10px;
+            background-color: #6b6969; 
+            width: 45%;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Billing Info</h2>
+        <form>
+            <p>Name</p>
+            <input type="text" class="clearable" id="bName" placeholder="Name" maxlength="29" />
+            <p>Email:</p>
+            <input type="text" class="clearable" id="bAddress" />
+            <p>City</p>
+            <input type="text" class="clearable" id="bCity" />
+            <p>State/Zip</p>
+            <!-- <input type="text" class="clearable" id="bStateZip" />  -->
+            <select id="bStateZip" class="clearable">
+                <option id="bStateZip">CA</option>
+                <option id="bStateZip">TX</option>
+                <option id="bStateZip">Oregon</option>
+            </select>
+            <p></p>
+            <input type="button" value="Copy to Shipping" id="copy" />
+   
+        </form>
+       
+    </div>
+    <div>
+        <h2> Shipping Info</h2>
+        <form>
+            <p>Name</p>
+            <input type="text" class="clearable" id="sName" placeholder="Name" maxlength="29" />
+            <p id="sName"></p>
+            <p>Email</p>
+            <p></p>
+            <input type="text" class="clearable" id="sAddress" />
+            <p>City</p>
+            <p></p>
+            <input type="text" class="clearable" id="sCity" />
+            <p>State/Zip</p>
+            <input type="text" class="clearable" id="sStateZip" />
+           <!-- <select id="sStateZip">
+                <option id="sStateZip">CA</option>
+                <option id="sStateZip">TX</option>
+            </select>-->
+            <p></p>
+            <input type="button" value="Clear All" id="clear" />
+        </form>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $("document").ready(function () {    // $(() =>   function shorthand for ready funct,   but older browser it won't work
+            console.log("jQuery is ready");
+            $("#copy").on("click", copyValues);
+            $("#clear").on("click", clearAll);
+            setFormColor();
+
+        });
+
+        var setFormColor = function (){
+            $("form").css("color", "#852929");
+        };
+        var copyValues = function () {
+            var bName = $("#bName").val();
+            var bAddress = $("#bAddress").val();
+            var bCity = $("#bCity").val();
+            var bStateZip = $("#bStateZip").val();
+
+            $("#sName").val(bName);    // copies inputs from left to right
+            $("#sAddress").val(bAddress);
+            $("#sCity").val(bCity);
+            $("#sStateZip").val(bStateZip);
+           // $("sStateZip").val($('#bStateZip').val());  //better way, no need for above varibale
+
+           //var billing = $(".bill").val();  //not sure why this didn't work
+            //console.log(billing);
+           // $(".ship").val(billing);
+        }
+        var clearAll = function () {
+            //$("#bName, #bAddress, #bCity, #bStateZip, #sName, #sAddress, #sCity, #sStateZip").val('');
+            $('.clearable').val(''); //this way is better, clear by class clearble
+
+        }
+    </script>
+</body>
+</html>

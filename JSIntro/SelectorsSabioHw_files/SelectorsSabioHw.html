@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0063)http://learn.sabio.la/Exercises/JQuery-Selectors/Selectors.html -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Selectors</title>
+	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<script type="text/javascript" src="chrome-extension://aadgmnobpdmgmigaicncghmmoeflnamj/ng-inspector.js"></script>--></head>
+<body>
+
+    <div class="container">
+        <h1>JS PreWork - Sabio</h1>
+
+        <div id="div1">This is first div.</div>
+
+        <div class="div2">This is second div.</div>
+
+        <div id="third" class="culver">
+
+            <ul class="list-inline">
+                <li>One</li>
+                <li>Two</li>
+            </ul>
+
+        </div>
+
+        <div class="child">
+            <p class="myclass">This is a paragraph.</p>
+            <p id="myid">This is second paragraph.</p>
+            <p>This is third paragraph.</p>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- jQuery-->
+   <!-- <script src="./SelectorsSabioHw_files/jquery.min.js.download"></script>
+    <script src="./SelectorsSabioHw_files/sabio.js.download"></script>  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+
+    <!-- All your code goes below here-->
+    <script type="text/javascript">
+
+        $("doucment").ready(function () {
+            //sabio.page.setBlueColor();
+            sabioDiv();
+            sabioDiv1();
+            showText1();
+        });
+
+         var sabioDiv = function () {
+             $("div").css("color", "#852929");
+         }
+         var sabioDiv1 = function () {
+             $("#div1").css("text-decoration", "underline");
+         }
+         var showText1 = function () {
+             alert($("h1").text());
+         }
+
+        /*
+        sabio.page.setBlueColor = function () {
+
+            // ID Selector (“#id”)
+            // Selects a element with the given id attribute.
+            //http://api.jquery.com/id-selector/
+
+            $("#div1").css("color", "blue");
+        }
+
+        sabio.page.setGreenBorder = function () {
+
+            // Class Selector (“.class”)
+            // Selects element(s) with the given class.
+            //http://api.jquery.com/class-selector/
+
+            $(".div2").css("border", "2px solid green");
+        }
+        sabio.page.showText = function () {
+
+            //Element Selector (“element”)
+            //Selects elements with the given tag name.
+            //http://api.jquery.com/element-selector/
+
+            alert($("h1").text());
+        } */
+
+
+
+    </script>
+
+
+
+
+</body></html>

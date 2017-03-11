@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+</head>
+<body>
+    <h1>Javascript Intro</h1>
+    <script type="text/javascript">   //type script has more control than javascript
+        // develompent will shift towards type script
+        // javascript gets converted into type script
+        // have script at bottom for speed
+        var age = 88;
+        var salary; //undefined 
+        salary = 135000;
+        console.log("Hello Universe"); // console used to test code on browser like chrome
+        console.log(age);
+        console.log(salary);
+        console.log("salary and age multiplied equals" + " " + age * salary); // number turns into string
+        var firstName = "Mila";
+        var lastName = "Repa";
+
+        // FUNCTIONS //     / html comments don't work in script brackets, ctrl + k + c to comment
+                                    // ctrl + k + u to uncomment
+
+        function getFullName(fname, lname) {
+            return fname + " " + lname;     // only #C can return mutiple values
+        };
+        getFullName(firstName, lastName);
+        // the following convention is prefered, function as variable
+        var getFullName = function (fname, lname) { // this allows to pass this into other functions
+            return fname + " " + lname;            // more specifically allows more complex call backs
+        } // this semantic will be used rest of course
+
+        (function () {
+            console.log('IIEF called');  // Self invoking function expression or IIEF, its an anonymous function thats invoking itself
+        }());
+
+        var ageCheck = function (name, age) {
+            if (age < 18) {
+                console.log(name + " " + " You are not eligble");
+            } else if (age > 70 ) {
+                console.log( name + " " + "YOu get a senior discount yay, wisdom")
+            } else if (!age == 50) {
+                console.log("Testing");
+    
+            }else {
+                console.log("Welcome" + " " + name);
+            }
+
+        };
+
+
+    //IN CLASS ASSIGNMENT - DEFINE function that computes bonus based off age
+        var calcalateBonus = function (age, salary) {
+            var bonus;
+            if (age < 5) {
+                //console.log("Your bonus is $" + salary * .10);
+            bonus = salary * .10
+            } else if (age > 5 && age < 10) {
+                //console.log("Your bonus is $" + salary * .20);
+                bonus = salary * .20;
+            } else {
+                //console.log("Your bonus is $" + salary * .30);
+                bonus = salary * .30;
+            }
+            console.log("Your bonus is $" + bonus);
+        };
+
+ 
+
+
+
+    </script>
+    </body>
+</html>

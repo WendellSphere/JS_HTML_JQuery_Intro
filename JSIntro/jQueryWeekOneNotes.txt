@@ -1,0 +1,55 @@
+﻿/*                                               jQuery
+                                        1/6/2017
+        jS libarary
+        Good for interactions
+        key for assesement**
+
+        other JS libraries
+        Angular - google
+        ReacJS - facebook
+        KnockOut -
+
+        //tripad recomened for right clicking
+        min - reduces the varible sizes and folder overall, removes spaces, on one line or so
+        
+        with the jQuery min file you can just drag over it to html file
+
+        DOM- when jquery is proccessed it quiries the DOM to see what elements there are
+        
+        jQuery is easier to use then using all the geElementId and other standard jS.
+            -gives you more flexbility
+        
+        $(document).ready(function {});  // function is a parameter of the function ready
+        jQuery - is one big Object so all the functions inisde are memember methods like ready above
+*/
+
+CDN - Content Delivery Network
+    - reduces traffic on your server by passing it to the other serve like Goolgle
+	- if user and you use same CDN then the browser doesn't have to download the file, it'sin cached memeory
+	- also easier to manage instead of downloading the jQuery file
+	- disadavantage: if that server goes it crashes but you can set up back up CDN's or servers?
+
+jQuery Functions && events
+	- .text()				// read or replace elements
+	- .show() / .hide() / toggle()  //hide or show elements, it toggles visibility so if hidden now shown
+	- fadeIn() or .fadeOut or .togglefade()  //animation added, can control speed
+			- example $("h1").fadeIn(100), $("h1").fadeOut("slow")   // 100 miliseconds
+	- .length   // its a property that see how many elements match the selector
+	- .val() //input elements
+	- .on()   //
+	- drag
+	- mouseover
+	-click
+	- hover
+	- alert // shows message on screen
+
+	JQUERY EVENTS 
+Some of the most popular events that • on () deals with are listed below. jQuery also added some extras to make life easier, such as ready, which fires when the page is ready to be worked with. These are noted with a pink asterisk: * 
+UI focus, blur, change 
+KEYBOARD input, keydown, keyup, keypress 
+MOUSE 
+FORM 
+click, dblclick, mouseup, mousedown, mouseover, mousemove, mouseout, hover* 
+submit, select, change 
+DOCUMENT ready* , load, unload* 
+BROWSER error, resize, scro 11 

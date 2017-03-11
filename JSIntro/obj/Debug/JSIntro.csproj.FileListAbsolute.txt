@@ -1,0 +1,6 @@
+c:\users\william\documents\visual studio 2013\Projects\JSIntro\bin\JSIntro.dll.config
+c:\users\william\documents\visual studio 2013\Projects\JSIntro\bin\JSIntro.dll
+c:\users\william\documents\visual studio 2013\Projects\JSIntro\bin\JSIntro.pdb
+c:\users\william\documents\visual studio 2013\Projects\JSIntro\obj\Debug\JSIntro.dll
+c:\users\william\documents\visual studio 2013\Projects\JSIntro\obj\Debug\JSIntro.pdb
+c:\users\william\documents\visual studio 2013\Projects\JSIntro\obj\Debug\JSIntro.csprojResolveAssemblyReference.cache

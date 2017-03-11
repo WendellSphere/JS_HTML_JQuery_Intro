@@ -1,0 +1,40 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>on demo</title>
+    <style>
+        p {
+            background: yellow;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+            p.over {
+                background: #ccc;
+            }
+
+        span {
+            color: red;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+    <p>Click me!</p>
+    <span></span>
+    <script>
+        // Example of event delegation (2nd parameter is p)
+var count = 0;
+$( "body" ).on( "click", "p", function() { 
+  $( this ).after( "<p>Another paragraph! " + (++count) + "</p>" );  // the count is added in text as string '1'
+});
+        // . after() inserts content, specfieded by the parameter, after each element in the set of matched elements
+
+        /*Event delegation allows us to attach a single event listener, to a parent element, that will fire for all descendants matching a selector, whether those descendants exist now or are added in the future.*/
+    </script>
+
+</body>
+</html>

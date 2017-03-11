@@ -1,0 +1,6 @@
+c:\users\william\documents\visual studio 2013\Projects\htmlIntro\htmlIntro\bin\htmlIntro.dll.config
+c:\users\william\documents\visual studio 2013\Projects\htmlIntro\htmlIntro\bin\htmlIntro.dll
+c:\users\william\documents\visual studio 2013\Projects\htmlIntro\htmlIntro\bin\htmlIntro.pdb
+c:\users\william\documents\visual studio 2013\Projects\htmlIntro\htmlIntro\obj\Debug\htmlIntro.dll
+c:\users\william\documents\visual studio 2013\Projects\htmlIntro\htmlIntro\obj\Debug\htmlIntro.pdb
+c:\users\william\documents\visual studio 2013\Projects\htmlIntro\htmlIntro\obj\Debug\htmlIntro.csprojResolveAssemblyReference.cache

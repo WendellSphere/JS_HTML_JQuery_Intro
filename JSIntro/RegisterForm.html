@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <h1>Register Form</h1>
+        <form>
+            <p>Name:</p>
+            <input type="text" id="name" placeholder="Name" maxlength="15"/> //placeholder places name hint in box, maxlength is for how many characters user can enter
+            <p>email:</p>
+            <input type="text" id="email" />
+            <p>password:</p>
+            <input type="password" id="password" />
+            <p></p>
+            <input type="button" value="Register Now" id="register"/>
+            <h2>You tpyed:</h2>
+            <p id="output"></p>  
+        </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            console.log("jQuery is ready");
+            $("#register").on("click", copyValues); // handle some event or events! (like click, hover, drag/ keep all in quotes) on your selector and there is a click function that doesn't need the on
+        });                                             // click calls the on anyways though and 
+        var copyValues = function () {
+            var name = $("#name").val();   //these assign the id
+            var email = $("#email").val();
+            var password = $("#password").val();
+            var userInput = name + ", " + email + ", " + password;
+            $("#output").text(userInput);  // read the userInput and displays at the bottom of webpage
+            $("#name, #email, #password").val(""); //this empty the text boxs
+            
+        };
+
+    </script> 
+</body>
+</html>
